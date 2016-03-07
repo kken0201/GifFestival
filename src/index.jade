@@ -1,0 +1,18 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset='UTF-8')
+    script(type='text/javascript', src='./scripts/lib/libgif.js')
+    script(type='text/javascript', src='./scripts/rubbable.js')
+    script(type='text/javascript', src='./scripts/tiltable.js')
+    script(type='text/javascript', src='./scripts/bundle.js')
+    link(rel='stylesheet', href='./stylesheets/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no')
+    title GifFestival
+  body(style="background-color: #fff;")
+    h1 スワイプで動く
+    img#example1(src='./images/gifs/cat.gif',rel:animated_src="./images/gifs/cat.gif", rel:auto_play='0', width='100%', rel:rubbable='1')
+    br
+      
+    h1 スマホ傾けて動く
+    img#example2(rel:animated_src='./images/gifs/inu.gif', rel:auto_play='0', width='100%')      
