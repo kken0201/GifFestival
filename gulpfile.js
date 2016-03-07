@@ -24,7 +24,6 @@ gulp.task('browser-sync', function() {
 gulp.task('browserify', function() {
   browserify(dir.src + '/scripts/app.js', { debug: true })
     .transform(babelify)
-    .transform(browserifyShim, { global: true })
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
     .pipe(source('scripts/bundle.js'))
